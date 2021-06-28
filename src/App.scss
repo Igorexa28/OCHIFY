@@ -1,0 +1,360 @@
+@import '../src/styles/mixins.scss'; 
+@import '../src/styles/variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 1100px;
+    background-color: #f0f0f0;
+}
+
+.logInBtn {
+    height: 40px;
+    width: 131px;
+    font-size: 24px;
+    margin-right: 20px;
+    color: $colorTextBtn;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    transition: all .2s linear;
+    background-color: $textColor;
+    border-radius: $borderRadius;
+    border: 2px solid $colorBorderBtn;
+
+    &:hover {
+        color: $textColor;
+        background-color: #FFFFFF;
+    }
+}
+
+.headerBtn {
+    font-size: 24px;
+    color: $colorTextBtn;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    border-radius: $borderRadius;
+    background-color: $textColor;
+    border: 2px solid $textColor;
+    transition: all .2s linear;
+    @include sizeOfBlock ($height: 40px, $width: 131px);
+
+    &:hover {
+        border: 2px solid $colorBorderBtn; 
+    }
+}
+
+.feedBtn,
+.myProfileBtn,
+.chatsBtn,
+.upgradeBtn,
+.logOutBtn {
+    font-size: 24px;
+    color: $colorTextBtn;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    border-radius: $borderRadius;
+    background-color: $textColor;
+    border: 2px solid $textColor;
+    transition: all .2s linear;
+    @include sizeOfBlock ($height: 40px, $width: 131px);
+
+    &:hover {
+        border: 2px solid $colorBorderBtn;
+    }
+}
+
+.upgradeBtn:hover {
+    color: $textColor;
+    background-color: #FFFFFF;
+}
+
+.logOutBtn {
+    margin-right: 15px;
+    border: 2px solid $colorBorderBtn;
+
+    &:hover {
+        color: $textColor;
+        background-color: $colorBorderBtn;
+    }
+}
+
+// * These styles will be used around other pages
+
+.head {
+    background-color: $textColor;
+    @include sizeOfBlock(102px, 100%);
+    @include flexContainer(row, wrap, center, space-between);
+
+    .headText {
+        font-size: 64px;
+        font-weight: 100px;
+        margin-left: 20px;
+        letter-spacing: 3px;
+        color: $colorTextBtn;
+        font-family: $fontFamily;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    .head {
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        &>.headText {
+            font-size: 55px;
+        }
+
+        &>.myProfileBtn {
+            width: 120px;
+            font-size: 19px;
+        }
+
+        &>.logInBtn,
+        .upgradeBtn,
+        .feedBtn,
+        .chatsBtn {
+            width: 120px;
+            font-size: 19px;
+        }
+    }
+}
+
+@media all and (max-width: 888px) {
+    .head {
+        height: auto;
+
+        &>.headText {
+            font-size: 50px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        &>.logInBtn {
+            border: 1px solid $textColor;
+            margin-bottom: 5px;
+        }
+
+        &>.logInBtn,
+        .upgradeBtn,
+        .feedBtn,
+        .chatsBtn,
+        .myProfileBtn {
+            width: 100%;
+            font-size: 22px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: 0px;
+
+            &:hover {
+                border-top: 2px solid $colorBorderBtn;
+                border-bottom: 2px solid $colorBorderBtn;
+                border-right: none;
+                border-left: none;
+            }
+        }
+    }
+}
+
+.main {
+    @include sizeOfBlock(1000px, 100%);
+
+    &.no-horizontal-scroll {
+        overflow-x: hidden;
+    }
+
+    .activeBtn {
+        color: $textColor;
+        background-color: #FFFFFF;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: $textColor;
+        }
+    }
+
+    .highlightBtn {
+        border: 2px solid $colorBorderBtn;
+    }
+
+    .formDiv {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        @include flexContainer(row, wrap, $jsContent: center);
+
+        .formRegister {
+            height: 683px;
+            min-width: 400px;
+            max-width: 456px;
+
+            label {
+                display: block;
+                font-size: 24px;
+                margin-top: 28px;
+                margin-left: 26px;
+                color: $textColor;
+                font-family: $fontFamily;
+                font-weight: $fontWeight;
+            }
+
+            .myInput {
+                @include sizeOfBlock(43px, 100%);
+                font-size: 24px;
+                padding-left: 10px;
+                color: $textColor;
+                font-family: $fontFamily;
+                font-weight: $fontWeight;
+                transition: all .2s linear;
+                border: 1px solid $textColor;
+                border-radius: $borderRadius;
+                box-shadow: 0px 4px 5px 0px $shadowColor;
+
+                &:hover {
+                    box-shadow: 0px 6px 5px 0px $shadowColor;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0px 7px 5px 0px $shadowColor;
+                }
+            }
+
+            .errorMessage {
+                color: #c03442;
+                margin-top: 10px;
+                margin-left: 10px;
+                font-family: $fontFamily;
+                font-weight: bold;
+            }
+
+            .linkBlockSign {
+                margin-top: 30px;
+                margin-bottom: 150px;
+
+                &>div {
+                    margin-top: 10px;
+                }
+
+                .linkContent {
+                    font-size: 24px;
+                    color: $textColor;
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    font-weight: $fontWeight;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .facebookIcon {
+                    height: auto;
+                    width: 50px;
+                    margin-top: -5px;
+                }
+
+                .googleIcon {
+                    height: auto;
+                    width: 50px;
+                    margin-top: -5px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            .linkBlock {
+                margin-top: 30px;
+                @include flexContainer(column, wrap, center, center);
+
+                &>div {
+                    margin-top: 10px;
+                }
+
+                .linkContent {
+                    font-size: 24px;
+                    color: $textColor;
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    font-weight: $fontWeight;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .coloredLink {
+                    color: $colorLink;
+                    font-size: 18px;
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    font-weight: $fontWeight;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .facebookIcon {
+                    height: auto;
+                    width: 50px;
+                    margin-top: -5px;
+                }
+
+                .googleIcon {
+                    margin-top: -5px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    @include sizeOfBlock(auto, 50px);
+                }
+            }
+        }
+
+        .formName {
+            font-size: 36px;
+            color: $textColor;
+            margin-left: 75px;
+            font-weight: bolder;
+            font-family: $fontFamily;
+        }
+
+        #formBtn {
+            @include sizeOfBlock(48.65px, 456px);
+            font-size: 24px;
+            margin-top: 26px;
+            color: $colorTextBtn;
+            font-family: $fontFamily;
+            font-weight: $fontWeight;
+            transition: all .2s linear;
+            background-color: $textColor;
+            border-radius: $borderRadius;
+            border: 1px solid $textColor;
+            box-shadow: 0px 4px 5px 0px $shadowColor;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: $textColor;
+                background-color: #FFFFFF;
+            }
+
+            &:left {
+                color: $colorTextBtn;
+                background-color: $textColor;
+            }
+        }
+    }
+}

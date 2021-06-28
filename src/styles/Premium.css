@@ -1,0 +1,151 @@
+html, body {
+  height: 900px;
+  background-color: #E5E5E5;
+}
+
+.mainPremium {
+  width: 100%;
+  font-size: 26px;
+  color: #000000;
+  font-weight: bolder;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainPremium .mainWord {
+  padding: 0 10px;
+  margin-top: 200px;
+  margin-bottom: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainPremium .mainWord > span:first-child {
+  font-size: 64px;
+  font-weight: bolder;
+}
+.mainPremium .mainWord > span:last-child {
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.mainPremium .mainDesc {
+  font-size: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bolder;
+  margin-bottom: 63px;
+}
+.mainPremium .mainDesc > center {
+  font-weight: bolder;
+}
+.mainPremium .btnBlock {
+  width: auto;
+  margin-bottom: 55px;
+}
+.mainPremium .btnBlock > button {
+  height: auto;
+  width: 100%;
+  padding: 0 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 4px 5px 0px #0E1220;
+          box-shadow: 0px 4px 5px 0px #0E1220;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainPremium .btnBlock > button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 5px 0px #0E1220;
+          box-shadow: 0px 6px 5px 0px #0E1220;
+}
+.mainPremium .premiumDesc {
+  padding: 0 10px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainPremium .premiumDesc > div:first-child {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+}
+.mainPremium .premiumDesc > div:last-child {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+@media all and (max-width: 908px) {
+  .mainPremium .mainWord {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mainPremium .mainDesc {
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 410px) {
+  .mainPremium .mainWord > span:first-child {
+    font-size: 44px;
+  }
+  .mainPremium .mainWord > span:last-child {
+    font-size: 24px;
+  }
+  .mainPremium .mainDesc {
+    font-size: 24px;
+  }
+  .mainPremium .btnBlock > button {
+    font-size: 27px;
+  }
+  .mainPremium .premiumDesc > div:first-child {
+    font-size: 16px;
+  }
+  .mainPremium .premiumDesc > div:last-child {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 314px) {
+  .mainPremium .btnBlock > button {
+    font-size: 23px;
+  }
+}/*# sourceMappingURL=Premium.css.map */

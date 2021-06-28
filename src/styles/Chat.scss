@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainChat {
+    display: flex;
+    height: 750px;
+    margin-top: 50px;
+    min-width: 200px;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 4px 0 #979797;
+
+    .listOfUsers {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        background-color: #FFFFFF;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+
+        .userBlock {
+            display: flex;
+            height: 100px;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            border-bottom: 1px solid #000000;
+
+            .userPhoto {
+                width: 77px;
+                height: 77px;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                margin-right: 10px;
+
+                .photo {
+                    width: 77px;
+                    height: 77px;
+                    border-radius: 50%;
+                    border: 1px solid black;
+                }
+            }
+
+            .userInfo {
+                width: 100%;
+
+                & > div {
+                    font-weight: bolder;
+                }
+
+                .userName {
+                    height: 50%;
+                    font-size: 18px;
+                    padding-left: 5px;
+                    padding-top: 20px;
+                    font-weight: bolder;
+                }
+
+                .userMessage {
+                    height: 50%;
+                    overflow: hidden;
+                    padding-top: 2px;
+                    padding-left: 5px;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+
+        & > div {
+            width: 100%;
+            height: 80px;
+        }
+    }
+
+    .sendMessageCont {
+        width: 100%;
+        height: 100%;
+
+        .messageField {
+            height: 90%;
+            display: flex;
+            overflow-y: scroll;
+            align-items: flex-end;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            background-color: #FFFFFF;
+            border-top-right-radius: 0;
+            border-top: 1px solid #000000;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, .2);
+
+            .outerDiv {
+                display: flex;
+                flex-flow: column wrap;
+                height: auto;
+                width: auto;
+                padding: 10px;
+                font-weight: bolder;
+                margin-top: 20px;
+                margin-right: 20px;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border: 1px solid #000000;
+                background-color: #F2F2F2;
+
+                .messageBlock {
+                    font-weight: bolder;
+                }
+
+                .timeBlock {
+                    font-weight: bolder;
+                    text-align: right;
+                }
+            }
+        }
+
+        .sendPanel {
+            height: 10%;
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            border-top: 1px solid #000000;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            border-bottom-right-radius: 50px;       
+    
+            .attachBlock {
+                height: 100%;
+                width: 100px;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: #FFFFFF;
+
+                    img {
+                        height: 50px;
+                        transition: all .1s linear;
+                        filter: drop-shadow(2px 2px 2px grey);
+
+                        &:hover {
+                            filter: drop-shadow(4px 4px 2px grey);
+                        }
+                    }
+                }
+            }
+
+            .textBlock {
+                width: 100%;
+                height: 100%;
+                box-shadow: inset 0 0 40px rgba(0, 0, 0, .2);
+
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    font-size: 20px;
+                    padding-left: 10px;
+                    padding-top: 20px;
+                    font-weight: bolder;
+                    overflow-y: none;
+                    resize: none;
+                    border: none;
+                }
+            }
+
+            .sendBlock {
+                height: 100%;
+                width: 100px;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: #FFFFFF;
+                    border-bottom-right-radius: 50px;
+
+                    img {
+                        height: 80px;
+                        border: none;
+                        transition: all .1s linear;
+                        filter: drop-shadow(2px 2px 2px grey);
+
+                        &:hover {
+                            filter: drop-shadow(4px 4px 2px grey);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    .mainChat {
+
+        .listOfUsers {
+
+            .userBlock {
+                width: 100%;
+
+                .userPhoto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .userInfo {
+                    display: none;
+
+                    .userName {
+                        display: none;
+                    }
+
+                    .userMessage {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .sendMessageCont {
+        
+            .messageField {
+                border-top-right-radius: 0;
+            }
+
+            .sendPanel {
+                border-bottom-right-radius: 0;
+
+                .sendBlock {
+
+                    button {
+                        border-bottom-right-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 510px) {
+    .mainChat {
+
+        .sendMessageCont {
+
+            .sendPanel {
+
+                .attachBlock {
+
+                    button {
+
+                        img {
+                            height: 36px;
+                        }
+                    }
+                }
+
+                .textBlock {
+
+                    textarea {
+                        font-size: 16px;
+                    }
+                }
+
+                .sendBlock {
+
+                    button {
+                        border-bottom-right-radius: 0;
+
+                        img {
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 300px) {
+    .mainChat {
+
+        .sendMessageCont {
+            width: 230px;
+        }
+    }
+}

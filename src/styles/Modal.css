@@ -1,0 +1,731 @@
+.modal_styles {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+    border-radius: 25px;
+    height: 352px;
+    width: 800px;
+    font-size: 28px;
+    transition: .3s all;
+}
+
+.headerModal {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+img {
+    transition: .2s linear;
+    filter: drop-shadow(0 1px 2px grey);
+}
+
+img:hover {
+    filter: drop-shadow(0 3px 3px grey);
+}
+
+.flexC {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.closeBtn {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 10px;
+}
+
+.flexCont {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.flexCont > button {
+    height: 55px;
+    width: 160px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 25px;
+    transition: all .2s linear;
+    box-shadow: 0 4px 4px grey;
+}
+
+.flexCont > button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0 7px 4px grey;
+}
+
+.overlay_styles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .4s;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+    transition: .5s;
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .modal_styles {
+        width: 100%;
+    }
+}
+
+/* Profile editing styles */
+
+.modal_styles_edit {
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 502px;
+    z-index: 1000;
+    position: fixed;
+    font-size: 28px;
+    transition: .3s all;
+    border-radius: 25px;
+    background-color: #FFF;
+    transform: translate(-50%, -50%);
+}
+
+.outerContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.headerModalEdit {
+    font-size: 36px;
+    margin-top: -20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.editForm {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.editLabel {
+    font-size: 24px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+.editInput {
+    width: 90%;
+    outline: none;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: all .3s linear;
+    box-shadow: 0 4px 4px grey;
+    border: 1px solid #000000;
+}
+
+.editInput:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+.editInput:focus {
+    box-shadow: 0 7px 7px grey;
+}
+
+#service {
+    width: 90%;
+    outline: none;
+    font-size: 25px;
+    padding-top: 3px;
+    margin-left: 20px;
+    padding-left: 18px;
+    padding-bottom: 3px;
+    border-radius: 50px;
+    font-weight: bolder;
+    transition: all .3s linear;
+    box-shadow: 0 4px 4px grey;
+}
+
+#service:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+#service > option {
+    font-weight: bolder;
+}
+
+.outerName {
+    width: 50%;
+}
+
+.outerNick {
+    width: 50%;
+    height: 100%;
+}
+
+.roleBlock {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    flex-flow: column nowrap;
+}
+
+.roleChoice {
+    width: 370px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.roleChoice > ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.roleChoice > ul > li {
+    display: block;
+    font-size: 20px; 
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.roleChoice > ul > li:first-child {
+    margin-right: 10px;
+}
+
+.roleChoice > ul > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.editForm > button {
+    height: 60px;
+    width: 220px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    font-weight: bolder;
+    transition: all .3s linear;
+    background-color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.editForm > button:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+.editForm > button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+@media all and (max-width: 800px) {
+    .modal_styles_edit {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 470px) {
+
+    .modal_styles_edit {
+        height: auto;
+    }
+
+    .headerModalEdit {
+        font-size: 27px;
+    }
+
+    .editLabel {
+        font-size: 20px;
+        margin-left: 70px;
+    }
+
+    .editInput {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #service {
+        width: 70%;
+        display: block;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .editForm > button {
+        width: 70%;
+        height: 50px;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .modal_styles_edit {
+        margin-top: -100px;
+    }
+
+    .roleChoice {
+        width: 100%;
+    }
+
+    .commonBlock {
+        flex-flow: column nowrap;
+    }
+
+    .outerName {
+        width: 100%;
+    }
+
+    .outerNick {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .roleBlock {
+        width: 100%;
+    }
+
+    .roleChoice {
+        height: auto;
+    }
+
+    .roleChoice > ul {
+        flex-flow: column nowrap;
+    }
+}
+
+/* * Image upload  */
+
+.modal_styles_upload {
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 502px;
+    z-index: 1000;
+    position: fixed;
+    font-size: 28px;
+    transition: .3s all;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+}
+
+.headerModalUpload {
+    font-size: 36px;
+    margin-top: -24px;
+}
+
+.nameTypeDescBlock {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nameTypeBlock {
+    width: 40%;
+}
+
+.descBlock {
+    width: 60%;
+}
+
+.uploadInput {
+    width: 80%;
+    height: 38px;
+    outline: none;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: all .3s linear;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.uploadInput:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+.uploadInput:focus {
+    box-shadow: 0 8px 8px grey;
+}
+
+.uploadLabel {
+    display: block;
+    font-size: 24px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+#typeWork {
+    width: 80%;
+    height: 38px;
+    outline: none;
+    font-size: 21px;
+    padding-top: 3px;
+    margin-left: 20px;
+    padding-left: 13px;
+    padding-bottom: 3px;
+    border-radius: 50px;
+    font-weight: bolder;
+    transition: all .3s linear;
+    box-shadow: 0 4px 4px grey;
+}
+
+#typeWork:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+#typeWork:focus {
+    box-shadow: 0 8px 8px grey;
+}
+
+#typeWork > option {
+    font-weight: bolder;
+}
+
+.imageTextArea {
+    width: 90%;
+    resize: none;
+    height: 120px;
+    outline: none;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-left: 20px;
+    padding-left: 12px;
+    font-weight: bolder;
+    padding-right: 10px;
+    border-radius: 31px;
+    transition:  .1s linear;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.imageTextArea:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+.imageTextArea:focus {
+    box-shadow: 0 8px 8px grey;
+}
+
+.imgWtrContainer {
+    width: 60%;
+}
+
+.choosePriceBlock {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.imageWaterBlock {
+    width: 90%;
+    display: flex;
+    height: 140px;
+    margin-left: 20px;
+    padding-left: 40px;
+    border-radius: 30px;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.hide {
+    opacity: 0;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.labelForFile {
+    height: 50;
+    width: 230px;
+    display : flex;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bolder;
+    align-items: center;
+    flex-flow: row nowrap;
+    transition: .3s linear;
+    background-color: #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.labelForFile:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #000000;
+}
+
+.labelForFile > .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+}
+
+.text {
+    color: #FFFFFF;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+.second {
+    margin-left: 26px;
+}
+
+.attachFile {
+    width: auto;
+    height: 28px;
+    padding-top: 5px;
+} 
+
+.watermarkFile {
+    padding-top: 5px;
+    padding-right: 2px;
+}
+
+.uploadInputPrice {
+    width: 80%;
+    height: 38px;
+    outline: none;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: all .3s linear;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.uploadInputPrice:hover {
+    box-shadow: 0 6px 6px grey;
+}
+
+.uploadInputPrice:focus {
+    box-shadow: 0 8px 8px grey;
+}
+
+.priceSubmitBlock {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.uploadBtn {
+    width: 220px;
+    height: 46px;
+    margin-top: 56px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+    transition: all .3s linear;
+    background-color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px grey;
+}
+
+.uploadBtn:hover {
+    box-shadow: 0 7px 7px grey;
+}
+
+.uploadBtn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+@media all and (max-width: 811px) {
+    .modal_styles_upload {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 675px) {
+    .uploadLabel {
+        margin-left: 20px;
+    }
+
+    .uploadInput {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    #typeWork {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .uploadInputPrice {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .imageWaterBlock {
+        padding-left: 0;
+        margin-left: 10px;
+    }
+
+    .labelForFile {
+        margin-left: 0;
+    }
+
+    .includeLabel {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .uploadBtn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #typeWork {
+        font-size: 18px;
+        padding-left: 2px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .modal_styles_upload {
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .headerModalUpload {
+        font-size: 27px;
+        margin-top: -8px;
+    }
+
+    .closeBtn > img {
+        height: 25px;
+    }
+
+    .nameTypeDescBlock {
+        height: auto;
+        flex-flow: column;
+    }
+
+    .nameTypeBlock {
+        width: 100%;
+    }
+
+    .uploadInput {
+        width: 95%;
+    }
+
+    #typeWork {
+        width: 95%;
+        font-size: 23px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .imageTextArea {
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .descBlock {
+        width: 100%;
+    }
+
+    .choosePriceBlock {
+        flex-flow: column wrap;
+    }
+
+    .imgWtrContainer {
+        width: 100%;
+    }
+
+    .imageWaterBlock {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .includeLabel {
+        width: 100%;
+    }
+
+    .labelForFile {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .priceSubmitBlock {
+        width: 100%;
+    }
+
+    .uploadInputPrice {
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .uploadBtn {
+        width: 95%;
+        height: 50px;
+        margin-top: 36px;
+    }
+}

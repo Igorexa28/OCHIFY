@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.head {
+  background-color: #000000;
+  height: 102px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.head .headText {
+  margin-left: 20px;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1060px) {
+  .head {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .head > .headText {
+    font-size: 55px;
+  }
+  .head > .logInBtn,
+.head .upgradeBtn,
+.head .feedBtn,
+.head .chatsBtn,
+.head .myProfileBtn {
+    width: 120px;
+    font-size: 19px;
+  }
+}
+@media all and (max-width: 908px) {
+  .head {
+    height: auto;
+  }
+  .head > .headText {
+    font-size: 50px;
+    text-align: center;
+    margin: 5px auto 0px auto;
+  }
+  .head > .logInBtn {
+    margin-bottom: 5px;
+    border: 1px solid #000000;
+  }
+  .head > .logInBtn,
+.head .upgradeBtn,
+.head .feedBtn,
+.head .chatsBtn,
+.head .myProfileBtn {
+    width: 100%;
+    font-size: 22px;
+    border-radius: 0px;
+    margin: 5px 0px 0px 0px;
+  }
+  .head > .logInBtn:hover,
+.head .upgradeBtn:hover,
+.head .feedBtn:hover,
+.head .chatsBtn:hover,
+.head .myProfileBtn:hover {
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+  }
+}
+.highlightBtn {
+  border: 2px solid #FFFFFF;
+}
+
+.main {
+  height: 1000px;
+  width: 100%;
+}
+.main.no-horizontal-scroll {
+  overflow-x: hidden;
+}
+.main .activeBtn {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.main .activeBtn:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.main .highlightBtn {
+  border: 2px solid #FFFFFF;
+}/*# sourceMappingURL=Common.css.map */

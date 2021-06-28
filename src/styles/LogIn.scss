@@ -1,0 +1,178 @@
+@import 'mixins.scss'; 
+@import 'variables.scss';
+
+// * These styles are used on LogIn and SignUp pages 
+
+body {
+    height: auto;
+}
+
+.headLogSignUp {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $textColor;
+    @include sizeOfBlock ($height: 102px, $width: 100%);
+
+    .headTextLogSignUp {
+        margin-left: 20px;
+        margin-top: 10px;
+        letter-spacing: 3px;
+        @include font($colorTextBtn, 64px, $fontFamily, 100px);
+    }
+}
+
+// * This is styles for main block which contains all the content
+// * of the page, except header...
+
+.mainLogIn {
+    padding-bottom: 20px;
+    @include sizeOfBlock(auto, 100%);
+
+    .formRegister {
+        margin-top: 88px;
+        min-width: 150px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .formName {
+            margin-bottom: 10px;
+
+            & > p {
+                text-align: center;
+                padding-top: 10px;
+                @include font($textColor, 36px, $fontFamily, $fontWeight);
+            }
+        }
+
+        .myLabel {
+            display: block;
+            margin: 28px 0 0 26px;
+            @include font($textColor, 24px, $fontFamily, $fontWeight);
+        }
+
+        .myInput {
+            padding-left: 10px;
+            transition: all .2s linear;
+            border: 1px solid $textColor;
+            border-radius: $borderRadius;
+            @include sizeOfBlock(43px, 100%);
+            box-shadow: 0px 4px 5px 0px $shadowColor;
+            @include font($textColor, 24px, $fontFamily, $fontWeight);
+
+            &:hover {
+                box-shadow: 0px 6px 5px 0px $shadowColor;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0px 7px 5px 0px $shadowColor;
+            }
+        }
+
+        .errorMessage {
+            margin: 10px 10px 0 5px;
+            @include font(#c03442, 16px, $fontFamily, $fontWeight);
+        }
+
+        #formBtn {
+            margin-top: 26px;
+            transition: all .2s linear;
+            background-color: $textColor;
+            border-radius: $borderRadius;
+            border: 1px solid $textColor;
+            @include sizeOfBlock(52.65px, 100%);
+            box-shadow: 0px 4px 5px 0px $shadowColor;
+            @include font($colorTextBtn, 24px, $fontFamily, $fontWeight);
+
+            &:hover {
+                color: $textColor;
+                background-color: #FFFFFF;
+                box-shadow: 0px 6px 5px 0px $shadowColor;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .linkBlock {
+            display: flex;
+            margin-top: 33px;
+            align-items: center;
+            flex-flow: column wrap;
+            justify-content: center;
+
+            & > div > .coloredLink {
+                text-decoration: none;
+                @include font($colorLink, 18px, $fontFamily, $fontWeight);
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+
+            & > div:first-child {
+                margin-bottom: 24px;
+            }
+
+            & > div:last-child {
+                margin-top: 14px;
+
+                .linkContent {
+                    text-decoration: none;
+                    @include font($textColor, 24px, $fontFamily, $fontWeight);
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .googleIcon {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    @include sizeOfBlock(auto, 50px);
+                }
+
+                .facebookIcon {
+                    @include sizeOfBlock(auto, 50px);
+                }
+            }   
+        }
+    }
+}
+
+@media all and (max-width: 460px) {
+    .headLogSignUp {
+        .headTextLogSignUp {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .mainLogIn {
+        .formRegister {
+            margin-top: 0;
+        }
+    }
+}
+
+@media all and (max-width: 307px) {
+    .mainLogIn {
+    
+        .formRegister {
+    
+            .formName {
+                margin-bottom: -15px;
+    
+                & > p {
+                    @include font($textColor, 28px, $fontFamily, $fontWeight);
+                }
+            }
+        }
+    }
+}

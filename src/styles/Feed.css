@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #e5e5e5;
+}
+
+.mainFeed .searchPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 54px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainFeed .searchPanel .innerSearch {
+  height: auto;
+  width: 758px;
+}
+.mainFeed .searchPanel .innerSearch > input:first-child {
+  outline: none;
+  font-size: 27px;
+  min-height: 20px;
+  padding-left: 10px;
+  border-radius: 50px;
+  font-weight: bolder;
+  vertical-align: middle;
+  border: 1px solid #000000;
+  height: 61px;
+  width: 100%;
+}
+.mainFeed .searchPanel .innerSearch > input:first-child:focus {
+  outline: none;
+}
+.mainFeed .mainFeedContent {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.mainFeed .mainFeedContent .searchForBlock {
+  width: 245px;
+  height: 370px;
+  max-height: 400px;
+  max-width: 1010px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .searchForBlock .optionHead {
+  font-size: 32px;
+  padding-top: 23px;
+  margin-bottom: -14px;
+  margin-left: -24px;
+}
+.mainFeed .mainFeedContent .searchForBlock .filterOption {
+  list-style: none;
+}
+.mainFeed .mainFeedContent .searchForBlock .filterOption > li {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.mainFeed .mainFeedContent .searchForBlock .filterOption > li > input[type=checkbox] {
+  margin-right: 10px;
+  border-radius: 20px;
+  height: 15px;
+  width: 15px;
+}
+.mainFeed .mainFeedContent .searchForBlock .filterOption > li:nth-child(2n) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mainFeed .mainFeedContent .searchForBlock .typeOfArt {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 30px;
+}
+.mainFeed .mainFeedContent .searchForBlock .searchSelect {
+  width: 80%;
+  height: 43px;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  padding-left: 10px;
+  margin-right: auto;
+  border-radius: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border: 0.5px solid #000000;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .searchForBlock .searchSelect:hover {
+  -webkit-box-shadow: 0 6px 4px 0 #979797;
+          box-shadow: 0 6px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:first-child {
+  font-weight: bolder;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) input[type=range] {
+  width: 100%;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) input[type=range]:focus {
+  outline: none;
+}
+.mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:last-child {
+  font-weight: bolder;
+}
+.mainFeed .mainFeedContent .searchForBlock input[type=range] {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainFeed .mainFeedContent .adaptiveBlock {
+  display: none;
+}
+.mainFeed .mainFeedContent .workersBlock {
+  height: auto;
+  width: 1010px;
+  min-width: 200px;
+  max-width: 1010px;
+  border-radius: 37px;
+  padding-bottom: 25px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  max-height: auto;
+  margin-left: auto;
+  padding-top: 25px;
+  margin-right: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding-bottom: 25px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid #000000;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerImage {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  height: 200px;
+  width: 200px;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerImage .workerImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerInfo > div {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns > button {
+  width: 223px;
+  height: 60px;
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bolder;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  background-color: #000000;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns > button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.mainFeed .mainFeedContent .sortByBlock {
+  width: 245px;
+  height: 250px;
+  max-height: 400px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .sortByBlock .optionHead {
+  font-size: 32px;
+  padding-top: 23px;
+  margin-left: -72px;
+  margin-bottom: -14px;
+}
+.mainFeed .mainFeedContent .sortByBlock .sortOptions {
+  list-style: none;
+}
+.mainFeed .mainFeedContent .sortByBlock .sortOptions > li {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.mainFeed .mainFeedContent .sortByBlock .sortOptions > li:nth-child(2n) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mainFeed .mainFeedContent .sortByBlock .sortOptions input[type=checkbox] {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+.mainFeed .mainFeedContent .sortByBlock .subBtn {
+  font-size: 24px;
+  display: block;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  background-color: #000000;
+  height: 50px;
+  width: 90%;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainFeed .mainFeedContent .sortByBlock .subBtn:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 6px 4px 0 #979797;
+          box-shadow: 0 6px 4px 0 #979797;
+}
+
+@media all and (max-width: 1517px) {
+  .mainFeed .mainFeedContent {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #979797;
+  }
+  .mainFeed .mainFeedContent .searchForBlock {
+    width: 90%;
+    height: auto;
+    padding-bottom: 25px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .optionHead {
+    margin-left: 0;
+    text-align: center;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li {
+    font-size: 20px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li > input[type=checkbox] {
+    padding-top: 2px;
+    height: 17px;
+    width: 17px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li:nth-child(2n) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .typeOfArt {
+    font-size: 25px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .searchSelect {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 350px;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .rangeBlock {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) input[type=range] {
+    width: 300px;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 25px;
+    max-height: 400px;
+    max-width: 1010px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    padding-bottom: 25px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 4px 4px 0 #979797;
+            box-shadow: 0 4px 4px 0 #979797;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .optionHead {
+    margin-left: 0;
+    font-size: 32px;
+    padding-top: 23px;
+    text-align: center;
+    margin-bottom: -14px;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .sortOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .sortOptions > li {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .sortOptions > li:nth-child(2n) {
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .sortOptions input[type=checkbox] {
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .subBtn {
+    display: block;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: auto;
+    max-width: 350px;
+    min-width: 150px;
+    margin-right: auto;
+    font-weight: bolder;
+    border-radius: 50px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border: 1px solid #000000;
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    -webkit-box-shadow: 0 4px 4px 0 #979797;
+            box-shadow: 0 4px 4px 0 #979797;
+  }
+  .mainFeed .mainFeedContent .adaptiveBlock .subBtn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  .mainFeed .mainFeedContent .workersBlock {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+  .mainFeed .mainFeedContent .sortByBlock {
+    display: none;
+  }
+}
+@media all and (max-width: 745px) {
+  .mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns > button:last-child {
+    margin-left: 20px;
+  }
+}
+@media all and (max-width: 593px) {
+  .mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainFeed .mainFeedContent .workersBlock .workerBlock .workerBtns > button:last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 470px) {
+  .mainFeed .searchPanel .innerSearch > input:first-child {
+    font-size: 22px;
+  }
+  .mainFeed .mainFeedContent .workersBlock .workerBlock .workerInfo {
+    padding: 5px;
+    margin-top: 25px;
+  }
+}
+@media all and (max-width: 430px) {
+  .mainFeed .searchPanel .innerSearch > input:first-child {
+    font-size: 18px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li:first-child {
+    margin-left: -3px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li:nth-child(2n) {
+    margin-left: 37px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .filterOption > li:last-child {
+    margin-left: 2px;
+  }
+  .mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) input[type=range] {
+    width: 220px;
+  }
+}
+@media all and (max-width: 330px) {
+  .mainFeed .mainFeedContent .searchForBlock .rangeBlock > div:nth-child(2n) input[type=range] {
+    width: 150px;
+  }
+}/*# sourceMappingURL=Feed.css.map */

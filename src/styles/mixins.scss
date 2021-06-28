@@ -1,0 +1,24 @@
+@mixin sizeOfBlock ($height: 100px, $width: 300px) {
+    height: $height;
+    width: $width;
+}
+
+@mixin font ($color: $textColor, $fontSize: 16px, $fontFamily: $fontFamily, $fontWeight: bold ) {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+}
+
+@mixin flexCont ($flexDir: row, $flexWrap: wrap, $jsContent: center) {
+    display: flex;
+    justify-content: $jsContent;
+    flex-flow: $flexDir $flexWrap;
+}
+
+@mixin flexContainer ($flexDir: row, $flexWrap: wrap, $alItems: center, $jsContent: center) {
+    display: flex;
+    flex-flow: $flexDir $flexWrap;
+    align-items: $alItems;
+    justify-content: $jsContent;
+}

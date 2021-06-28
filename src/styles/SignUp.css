@@ -1,0 +1,180 @@
+body {
+  overflow-x: hidden;
+}
+
+.headLogSignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row space-between;
+          flex-flow: row space-between;
+  background-color: #000000;
+}
+.headLogSignUp .headTextLogSignUp {
+  font-weight: bolder;
+}
+.headLogSignUp .logInSign {
+  margin-right: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius: 50px;
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  height: 40px;
+  width: 131px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.headLogSignUp .logInSign:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.mainSignUp {
+  padding-bottom: 20px;
+  height: auto;
+  width: 100%;
+}
+.mainSignUp .formRegister {
+  min-width: 150px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainSignUp .formRegister .formName {
+  margin-bottom: 10px;
+}
+.mainSignUp .formRegister .formName > p {
+  text-align: center;
+  padding-top: 10px;
+  color: #000000;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .formRegister .myLabel {
+  display: block;
+  margin: 28px 0 0 26px;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .formRegister .myInput {
+  padding-left: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  height: 43px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px #0E1220;
+          box-shadow: 0px 4px 5px 0px #0E1220;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .formRegister .myInput:hover {
+  -webkit-box-shadow: 0px 6px 5px 0px #0E1220;
+          box-shadow: 0px 6px 5px 0px #0E1220;
+}
+.mainSignUp .formRegister .myInput:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 7px 5px 0px #0E1220;
+          box-shadow: 0px 7px 5px 0px #0E1220;
+}
+.mainSignUp .formRegister .errorMessage {
+  margin: 10px 10px 0 5px;
+  color: #c03442;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .formRegister #formBtn {
+  margin-top: 26px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #000000;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  height: 52.65px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px #0E1220;
+          box-shadow: 0px 4px 5px 0px #0E1220;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .formRegister #formBtn:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 5px 0px #0E1220;
+          box-shadow: 0px 6px 5px 0px #0E1220;
+}
+.mainSignUp .formRegister #formBtn:focus {
+  outline: none;
+}
+.mainSignUp .linkBlockSign {
+  margin-top: 30px;
+}
+.mainSignUp .linkBlockSign .linkContent {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainSignUp .linkBlockSign .linkContent:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainSignUp .linkBlockSign .googleIcon {
+  margin-left: 4px;
+  margin-right: 4px;
+  height: auto;
+  width: 50px;
+}
+.mainSignUp .linkBlockSign .facebookIcon {
+  height: auto;
+  width: 50px;
+}
+
+@media all and (max-width: 460px) {
+  .headLogSignUp {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .headLogSignUp .headTextLogSignUp {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .headLogSignUp .logInSign {
+    margin-right: 0;
+    border-radius: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin-bottom: 5px;
+    height: auto;
+    width: 100%;
+  }
+}
+@media all and (max-width: 307px) {
+  .mainSignUp .formRegister .formName {
+    margin-bottom: -15px;
+  }
+  .mainSignUp .formRegister .formName > p {
+    color: #000000;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=SignUp.css.map */

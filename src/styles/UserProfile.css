@@ -1,0 +1,352 @@
+.head {
+  margin-bottom: 25px;
+}
+.head .headText {
+  font-weight: bolder;
+}
+
+.mainProfile {
+  padding-bottom: 150px;
+}
+.mainProfile .userInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  min-width: 200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.mainProfile .userInformation .userContPhoto {
+  width: 220px;
+  height: 220px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 10px;
+}
+.mainProfile .userInformation .userContPhoto .userPicture {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.mainProfile .userInformation .userContInfo {
+  width: 81%;
+}
+.mainProfile .userInformation .userContInfo > div {
+  height: 25%;
+}
+.mainProfile .userInformation .userContInfo .userNameNick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .NameNick {
+  margin-left: 20px;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .NameNick > span:first-child {
+  font-size: 36px;
+  font-weight: bolder;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .NameNick > span:last-child {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .userRole {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .userRole > span {
+  font-size: 24px;
+  font-style: italic;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .userRole > span:first-child {
+  font-weight: normal;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .userRole .makeBolder {
+  font-weight: bolder;
+  background-color: aqua;
+}
+.mainProfile .userInformation .userContInfo .userNameNick .userRole .makeNotBolder {
+  font-weight: normal;
+}
+.mainProfile .userInformation .userContInfo .userStatistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  font-size: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainProfile .userInformation .userContInfo .userStatistics > div {
+  font-weight: bolder;
+}
+.mainProfile .userInformation .userContInfo .userStatistics > div > span {
+  text-decoration: underline;
+}
+.mainProfile .userInformation .userContInfo .userStatistics .userFollowers {
+  margin-left: 20px;
+}
+.mainProfile .userInformation .userContInfo .userStatistics .userRate {
+  margin-right: 10px;
+}
+.mainProfile .userInformation .userContInfo .userServices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.mainProfile .userInformation .userContInfo .userServices > div {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+.mainProfile .userInformation .userContInfo .userServices > div > span {
+  font-style: italic;
+}
+.mainProfile .userInformation .userContInfo .actionBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-weight: bolder;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.mainProfile .userInformation .userContInfo .actionBtns > button:first-child {
+  margin-left: 10px;
+}
+.mainProfile .userInformation .userContInfo .actionBtns > button:last-child {
+  margin-right: 10px;
+}
+.mainProfile .userInformation .userContInfo .actionBtns > button {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bolder;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  background-color: #000000;
+  height: 50px;
+  width: 200px;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainProfile .userInformation .userContInfo .actionBtns > button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.mainProfile .userPublications {
+  margin-top: 25px;
+  border-radius: 25px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 4px 0 #979797;
+          box-shadow: 0 4px 4px 0 #979797;
+}
+.mainProfile .userPublications .uploadDownload {
+  padding-top: 25px;
+}
+.mainProfile .userPublications .worksBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.mainProfile .userPublications .worksBlock .emptyRes {
+  font-size: 27px;
+}
+.mainProfile .userPublications .worksBlock .work {
+  margin-top: 25px;
+  border: 1px solid #000000;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  height: 260px;
+  width: 260px;
+}
+.mainProfile .userPublications .worksBlock .work .workImage {
+  height: 100%;
+  width: 100%;
+}
+.mainProfile .userPublications .worksBlock .work:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media all and (max-width: 842px) {
+  .mainProfile .userInformation .userContInfo .userNameNick .NameNick > span:first-child {
+    font-size: 30px;
+  }
+  .mainProfile .userInformation .userContInfo .userNameNick .NameNick > span:last-child {
+    font-size: 20px;
+  }
+  .mainProfile .userInformation .userContInfo .userNameNick .userRole > span {
+    font-size: 20px;
+  }
+  .mainProfile .userInformation .userContInfo .userServices > div {
+    font-size: 20px;
+  }
+  .mainProfile .userInformation .userContInfo .userStatistics {
+    font-size: 20px;
+  }
+  .mainProfile .userInformation .userContInfo .actionBtns button {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 693px) {
+  .mainProfile .userInformation {
+    padding-top: 25px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .mainProfile .userInformation .userContPhoto {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 25px;
+  }
+  .mainProfile .userInformation .userContInfo {
+    width: 100%;
+    height: 200px;
+  }
+  .mainProfile .userPublications .uploadDownload {
+    font-size: 20px;
+  }
+  .mainProfile .userPublications .worksBlock .emptyRes {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 518px) {
+  .mainProfile .userInformation {
+    margin-bottom: 270px;
+  }
+  .mainProfile .userInformation .userContInfo .userNameNick {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainProfile .userInformation .userContInfo .userNameNick .userRole {
+    margin-top: -5px;
+  }
+  .mainProfile .userInformation .userContInfo .userStatistics {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainProfile .userInformation .userContInfo .userStatistics > div:first-child {
+    margin-top: 5px;
+    margin-left: -15px;
+  }
+  .mainProfile .userInformation .userContInfo .userStatistics > div:last-child {
+    margin-bottom: 5px;
+  }
+  .mainProfile .userInformation .userContInfo .userServices {
+    height: 70px;
+  }
+  .mainProfile .userInformation .userContInfo .actionBtns {
+    height: 180px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainProfile .userInformation .userContInfo .actionBtns > button {
+    width: 100%;
+    border-radius: 0;
+  }
+  .mainProfile .userInformation .userContInfo .actionBtns > button:first-child {
+    margin-left: 0;
+  }
+  .mainProfile .userInformation .userContInfo .actionBtns > button:last-child {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=UserProfile.css.map */

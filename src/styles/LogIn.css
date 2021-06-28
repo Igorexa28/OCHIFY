@@ -1,0 +1,195 @@
+body {
+  height: auto;
+}
+
+.headLogSignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000;
+  height: 102px;
+  width: 100%;
+}
+.headLogSignUp .headTextLogSignUp {
+  margin-left: 20px;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100px;
+}
+
+.mainLogIn {
+  padding-bottom: 20px;
+  height: auto;
+  width: 100%;
+}
+.mainLogIn .formRegister {
+  margin-top: 88px;
+  min-width: 150px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainLogIn .formRegister .formName {
+  margin-bottom: 10px;
+}
+.mainLogIn .formRegister .formName > p {
+  text-align: center;
+  padding-top: 10px;
+  color: #000000;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister .myLabel {
+  display: block;
+  margin: 28px 0 0 26px;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister .myInput {
+  padding-left: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  height: 43px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px #0E1220;
+          box-shadow: 0px 4px 5px 0px #0E1220;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister .myInput:hover {
+  -webkit-box-shadow: 0px 6px 5px 0px #0E1220;
+          box-shadow: 0px 6px 5px 0px #0E1220;
+}
+.mainLogIn .formRegister .myInput:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 7px 5px 0px #0E1220;
+          box-shadow: 0px 7px 5px 0px #0E1220;
+}
+.mainLogIn .formRegister .errorMessage {
+  margin: 10px 10px 0 5px;
+  color: #c03442;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister #formBtn {
+  margin-top: 26px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #000000;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  height: 52.65px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px #0E1220;
+          box-shadow: 0px 4px 5px 0px #0E1220;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister #formBtn:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 5px 0px #0E1220;
+          box-shadow: 0px 6px 5px 0px #0E1220;
+}
+.mainLogIn .formRegister #formBtn:focus {
+  outline: none;
+}
+.mainLogIn .formRegister .linkBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainLogIn .formRegister .linkBlock > div > .coloredLink {
+  text-decoration: none;
+  color: #5551FF;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister .linkBlock > div > .coloredLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainLogIn .formRegister .linkBlock > div:first-child {
+  margin-bottom: 24px;
+}
+.mainLogIn .formRegister .linkBlock > div:last-child {
+  margin-top: 14px;
+}
+.mainLogIn .formRegister .linkBlock > div:last-child .linkContent {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mainLogIn .formRegister .linkBlock > div:last-child .linkContent:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainLogIn .formRegister .linkBlock > div:last-child .googleIcon {
+  margin-left: 4px;
+  margin-right: 4px;
+  height: auto;
+  width: 50px;
+}
+.mainLogIn .formRegister .linkBlock > div:last-child .facebookIcon {
+  height: auto;
+  width: 50px;
+}
+
+@media all and (max-width: 460px) {
+  .headLogSignUp .headTextLogSignUp {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .mainLogIn .formRegister {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 307px) {
+  .mainLogIn .formRegister .formName {
+    margin-bottom: -15px;
+  }
+  .mainLogIn .formRegister .formName > p {
+    color: #000000;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=LogIn.css.map */
